@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Zilla+Slab:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.searchdiv {
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+}
+
+.data {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Markazi Text', serif;
+    font-size: 50px;
+    padding: 7px;
+    margin-bottom: 10px;
+    color: #0041a1;
+}
+
+.weatherdata {
+    margin-top: 15px;
+    font-size: 150%;
+}
+
+.weatherdata div {
+    padding: 5px;
+}
+
+.place {
+    font-size: 200%;
+    color: rgb(247, 72, 3);
+}
+
+.weather {
+    margin-top: 25px;
+}
+
+.image {
+    display: inline-flex;
+}
+
+.temp {
+    margin-top: 5px;
+    font-size: 200%;
+}
+
+.cf,
+.fc {
+    margin-top: 10px;
+    font-size: 70%;
+    cursor: pointer;
+}
+
+.notfound {
+    margin-top: 10px;
+    font-size: 130%;
+    ;
+}
+
+@media only screen and (max-width:767px) {
+    .place {
+        font-size: 150%;
+    }
+}
+
+/* Toggle Switch */
+.switch {
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-bottom: 0;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #333;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #333;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* For Dark Mode */
+.dark-mode {
+    filter: invert(90%) hue-rotate(180deg);
+}
+
+.dark-mode-img {
+    filter: invert(90%) hue-rotate(180deg);
+}
+
+.info {
+    font-family: 'Zilla Slab', serif;
+}
